@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  /* color: inherit; */
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+#bar1{
+  width: 65%;
+}
+#bar2{
+  width: 50%;
+}
+#bar3{
+  width: 85%;
+}
+
+
+.fc-theme-standard .fc-scrollgrid{
+  border: 1px solid  rgb(117, 117, 117);
+}
+
+.fc-theme-standard th {
+  border: 1px solid black;
+}
+.fc-theme-standard td {
+border-right:1px solid rgb(117, 117, 117);
+}
+
+.fc .fc-cell-shaded, .fc .fc-day-disabled {
+  background: black;
+}
