@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from '../components/Layout';
 
-const users = () => {
+const teamchat = () => {
   return (
   
     <Layout>
@@ -145,4 +145,4 @@ const users = () => {
   )
 }
 
-export default users
+export default teamchat

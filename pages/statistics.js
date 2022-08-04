@@ -3,7 +3,7 @@ import Layout from '../components/Layout';
 import {Bar,Line,Pie,Radar, Scatter} from 'react-chartjs-2';
 import Chart from 'chart.js/auto';
 
-const tutorials = () => {
+const statistics = () => {
 
 
   const BarData = {
@@ -139,13 +139,16 @@ const ScatterData = {
   return ( 
     <Layout>
 
-<div className='flex flex-wrap justify-evenly'>
-      
+<div className='flex flex-col'>
+      <div className='flex flex-row justify-evenly'>
         <div className='bg-white p-8 mt-8 rounded-[14px]'> <Bar data={BarData} width={400} height={200} /></div>
         <div className='bg-white p-8 mt-8 rounded-[14px]'> <Line data={LineData} width={400} height={200}/> </div>
+      </div>
+      <div className='flex flex-row justify-evenly'>
         <div className='bg-white p-8 mt-10 rounded-[14px]'> <Pie data={PieData} width={250} height={250} /></div>
         <div className='bg-white p-8 mt-10 rounded-[14px]'> <Radar data={RadarData} width={250} height={250}/></div>
         <div className='bg-white p-8 mt-10 rounded-[14px]'> <Scatter data={ScatterData} width={250} height={250}/></div>
+      </div>
 </div>
   
 
@@ -154,4 +157,4 @@ const ScatterData = {
   )
 }
 
-export default tutorials;
+export default statistics;

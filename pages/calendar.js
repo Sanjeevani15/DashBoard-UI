@@ -8,7 +8,7 @@ import '@fullcalendar/common/main.css'
 import '@fullcalendar/daygrid/main.css'
 import '@fullcalendar/timegrid/main.css'
 
-const posts = () => {
+const calendar = () => {
   const events=[
     {
       title  : 'Meeting with John, Check Dashboard,Task Distribution',
@@ -87,4 +87,4 @@ const posts = () => {
   )
 }
 
-export default posts
+export default calendar;

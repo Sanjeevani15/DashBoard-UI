@@ -6,9 +6,9 @@ import React, { useMemo, useState} from 'react'
 
 const menuItems = [
     { id: 1, label: "Dashboard", icon: HomeIcon, link: "/" },
-    { id: 2, label: "Calendar", icon: ArticleIcon, link: "/posts" },
-    { id: 3, label: "Team Chat", icon: UsersIcon, link: "/users" },
-    { id: 4, label: "Statistics", icon: VideosIcon, link: "/tutorials" },
+    { id: 2, label: "Calendar", icon: ArticleIcon, link: "/calendar" },
+    { id: 3, label: "Team Chat", icon: UsersIcon, link: "/teamchat" },
+    { id: 4, label: "Statistics", icon: VideosIcon, link: "/statistics" },
   ];
 
 
@@ -54,6 +54,7 @@ const Sidebar = () => {
         setIsCollapsible(!isCollapsible);
     };
 
+
     const handleSidebarToggle=()=>{
         setToggleCollapse(!toggleCollapse);
     };
@@ -62,6 +63,7 @@ const Sidebar = () => {
     <div className={wrapperClasses} 
         onMouseEnter={onMouseOver} 
         onMouseLeave={onMouseOver} 
+       
         style={{transition:"width 300ms cubic-bezeir(0.2,0,0,1) 0s"}}
         >
 
@@ -84,7 +86,7 @@ const Sidebar = () => {
         </div>  
 
             <div className='flex flex-col items-start mt-24'>
-                    {menuItems.map(({icon:Icon,...menu})=>{
+                    {menuItems.map(({icon:Icon, ...menu})=>{
                          const classes = navItemClasses(menu);
                             return(
                                 <div className={classes}>
