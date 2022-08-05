@@ -10,12 +10,17 @@ const withTM = require("next-transpile-modules")([
   "@fullcalendar/timegrid",
 ]);
 
-// const nextConfig = {
-//   reactStrictMode: true,
-//   swcMinify: true,
-// }
+const nextConfig = {
+  reactStrictMode: true,
+  images: {
+    loader: "imgix",
+    path: "",
+    unoptimized:true,
+  },
+};
 
-// module.exports = nextConfig,withTM({
+module.exports = nextConfig;
+
   module.exports =withTM({
   // your custom config goes here
 });
