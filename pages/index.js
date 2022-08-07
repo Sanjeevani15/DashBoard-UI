@@ -131,7 +131,7 @@ export default function Home() {
 <div className="relative flex py-5 items-center mt-5 ml-6 mr-10">
     <span className="flex-shrink mx-4 text-xl font-medium tracking-normal text-black">Project</span>
     <div className="flex-grow border-t border-gray-400"></div>
-    <button className="bg-transparent hover:bg-white hover:text-sky-400 text-gray-800  py-2 px-4 border border-gray-400 rounded-full shadow mx-2">
+   <button className="bg-transparent hover:bg-white hover:text-sky-400 text-gray-800  py-2 px-4 border border-gray-400 rounded-full shadow mx-2">
       Ongoing
     </button>
     <button className="bg-transparent hover:bg-white hover:text-sky-400  py-2 px-4 border border-gray-400 rounded-full mr-2 shadow">
